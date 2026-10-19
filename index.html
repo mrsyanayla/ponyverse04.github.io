@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pony Verse – Informatika X-D</title>
+  <meta name="theme-color" content="#e6c9ff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600..900,100&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- kumpulan ikon yang dipakai ulang -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="hornGrad" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0"   stop-color="#7ee0b5"/>
+        <stop offset=".25" stop-color="#7ec3ff"/>
+        <stop offset=".5"  stop-color="#ffe27a"/>
+        <stop offset=".75" stop-color="#ff8fcf"/>
+        <stop offset="1"   stop-color="#b57bff"/>
+      </linearGradient>
+      <symbol id="horn" viewBox="0 0 60 120">
+        <path d="M30 4 C34 30 50 70 56 108 Q30 120 4 108 C10 70 26 30 30 4Z" fill="url(#hornGrad)"/>
+        <path d="M13 92 Q30 80 50 92 M17 70 Q31 59 44 70 M22 48 Q31 40 39 48 M26 28 Q30 24 34 28"
+              stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none" opacity=".9"/>
+      </symbol>
+      <symbol id="shoe" viewBox="0 0 100 100">
+        <path d="M26 92 C4 62 8 12 50 12 C92 12 96 62 74 92" stroke="#ffcf4d" stroke-width="15" stroke-linecap="round" fill="none"/>
+        <circle cx="22" cy="58" r="3.2" fill="#fff"/><circle cx="26" cy="38" r="3.2" fill="#fff"/>
+        <circle cx="50" cy="26" r="3.2" fill="#fff"/><circle cx="74" cy="38" r="3.2" fill="#fff"/>
+        <circle cx="78" cy="58" r="3.2" fill="#fff"/>
+      </symbol>
+      <symbol id="spark" viewBox="0 0 50 50">
+        <path d="M25 2 C28 18 32 22 48 25 C32 28 28 32 25 48 C22 32 18 28 2 25 C18 22 22 18 25 2Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="heart" viewBox="0 0 50 46">
+        <path d="M25 44 C-8 22 6 -6 25 11 C44 -6 58 22 25 44Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="rainbow" viewBox="0 0 120 64">
+        <g fill="none" stroke-width="9" stroke-linecap="round">
+          <path d="M8 60 A52 52 0 0 1 112 60" stroke="#ff7ac8"/>
+          <path d="M19 60 A41 41 0 0 1 101 60" stroke="#ffe27a"/>
+          <path d="M30 60 A30 30 0 0 1 90 60" stroke="#7ee0b5"/>
+          <path d="M41 60 A19 19 0 0 1 79 60" stroke="#7ec3ff"/>
+        </g>
+      </symbol>
+      <symbol id="cloud" viewBox="0 0 120 60">
+        <path d="M28 56 C6 56 4 30 24 28 C24 8 56 4 64 22 C80 8 108 20 98 42 C116 42 116 56 98 56Z" fill="#fff"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- hiasan melayang di belakang semua slide -->
+  <div class="decor" aria-hidden="true">
+    <svg class="d horn  h1"><use href="#horn"/></svg>
+    <svg class="d horn  h2"><use href="#horn"/></svg>
+    <svg class="d horn  h3"><use href="#horn"/></svg>
+    <svg class="d shoe  s1"><use href="#shoe"/></svg>
+    <svg class="d shoe  s2"><use href="#shoe"/></svg>
+    <svg class="d spark k1"><use href="#spark"/></svg>
+    <svg class="d spark k2"><use href="#spark"/></svg>
+    <svg class="d spark k3"><use href="#spark"/></svg>
+    <svg class="d spark k4"><use href="#spark"/></svg>
+    <svg class="d heart hrt1"><use href="#heart"/></svg>
+    <svg class="d heart hrt2"><use href="#heart"/></svg>
+    <svg class="d cloud c1"><use href="#cloud"/></svg>
+    <svg class="d cloud c2"><use href="#cloud"/></svg>
+    <svg class="d rainbow r1"><use href="#rainbow"/></svg>
+  </div>
+
+  <div class="deck" id="deck">
+
+    <!-- ===== SLIDE 1: HOME ===== -->
+    <section class="slide" id="home" data-title="Home">
+      <div class="slide-in hero">
+        <div class="badge-wrap">
+          <div class="badge">
+            <img src="logo.png" alt="Logo Pony Verse: tanduk unicorn warna-warni dengan bintang dan sayap">
+          </div>
+        </div>
+
+        <h1>
+          <span class="l1">Hai, kami</span>
+          <span class="l2">Pony Verse</span>
+        </h1>
+
+        <p class="lead">
+          Satu kelas, satu semesta kecil. Kami anak Informatika X-D
+          yang membangun proyek ini bareng-bareng,
+          dari kode sampai desain.
+        </p>
+
+        <ul class="crew">
+          <li class="member m1"><span class="avatar" aria-hidden="true">&lt;/&gt;</span><div><h3>Nama Anggota 1</h3><p>Web Programmer</p></div></li>
+          <li class="member m2"><span class="avatar" aria-hidden="true">▢</span><div><h3>Nama Anggota 2</h3><p>App Programmer</p></div></li>
+          <li class="member m3"><span class="avatar" aria-hidden="true">✎</span><div><h3>Nama Anggota 3</h3><p>Content Writer</p></div></li>
+          <li class="member m4"><span class="avatar" aria-hidden="true">✿</span><div><h3>Nama Anggota 4</h3><p>Graphic Design</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 2: DESIGN ===== -->
+    <section class="slide" id="design" data-title="Design">
+      <div class="slide-in">
+        <div class="panel-head">
+          <h2>Desain kami</h2>
+          <p>Logo, cerita di baliknya, dan warna yang kami pakai.</p>
+        </div>
+
+        <div class="story">
+          <article class="story-card tall">
+            <svg class="mini-horn" aria-hidden="true"><use href="#horn"/></svg>
+            <h3>Tanduk</h3>
+            <p>Setiap anggota punya satu hal yang paling ia kuasai, dan itu yang menjulang ke atas.</p>
+          </article>
+          <article class="story-card">
+            <h3>Sayap & surai</h3>
+            <p>Lembut tapi bersambung. Tim ini saling menopang, bukan jalan sendiri-sendiri.</p>
+          </article>
+          <article class="story-card">
+            <h3>Bintang</h3>
+            <p>Hal kecil yang bikin proyek terasa spesial.</p>
+          </article>
+        </div>
+
+        <h3 class="sub">Palet warna</h3>
+        <ul class="swatches">
+          <li><span style="background:#b57bff"></span>Ungu</li>
+          <li><span style="background:#ff8fcf"></span>Pink</li>
+          <li><span style="background:#ffe27a"></span>Kuning</li>
+          <li><span style="background:#7ec3ff"></span>Biru</li>
+          <li><span style="background:#7ee0b5"></span>Mint</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SLIDE 3: PRODUK ===== -->
+    <section class="slide" id="produk" data-title="Produk">
+      <div class="slide-in">
+        <div class="panel-head">
+          <h2>Produk kami</h2>
+          <p>Hasil karya yang kami buat. Ganti isinya sesuai proyekmu.</p>
+        </div>
+
+        <div class="products">
+          <article class="product">
+            <div class="thumb t1" aria-hidden="true">🌐</div>
+            <h3>Website Kelompok</h3>
+            <p>Halaman profil tim yang sedang kamu lihat ini.</p>
+            <span class="tag">Web</span>
+          </article>
+          <article class="product">
+            <div class="thumb t2" aria-hidden="true">📱</div>
+            <h3>Aplikasi</h3>
+            <p>Tulis singkat apa fungsi aplikasi kalian di sini.</p>
+            <span class="tag">App</span>
+          </article>
+          <article class="product">
+            <div class="thumb t3" aria-hidden="true">🎨</div>
+            <h3>Desain Grafis</h3>
+            <p>Logo, poster, dan materi visual buatan tim.</p>
+            <span class="tag">Desain</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <nav class="dock" aria-label="Navigasi slide">
+    <button type="button" data-go="0" class="on">Home</button>
+    <button type="button" data-go="1">Design</button>
+    <button type="button" data-go="2">Produk</button>
+  </nav>
+
+  <script>
+    const slides = [...document.querySelectorAll('.slide')];
+    const btns   = [...document.querySelectorAll('.dock button')];
+    let cur = 0;
+
+    function go(i, pushHash = true) {
+      cur = Math.max(0, Math.min(slides.length - 1, i));
+      slides.forEach((s, k) => {
+        s.style.transform = `translateX(${(k - cur) * 100}%)`;
+        s.classList.toggle('active', k === cur);
+        s.toggleAttribute('inert', k !== cur);
+        s.setAttribute('aria-hidden', k !== cur);
+        if (k === cur) s.scrollTop = 0;
+      });
+      btns.forEach((b, k) => b.classList.toggle('on', k === cur));
+      if (pushHash) history.replaceState(null, '', '#' + slides[cur].id);
+    }
+
+    btns.forEach(b => b.addEventListener('click', () => go(+b.dataset.go)));
+
+    // geser kiri/kanan di layar sentuh
+    let sx = 0, sy = 0;
+    addEventListener('touchstart', e => { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
+    addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - sx;
+      const dy = e.changedTouches[0].clientY - sy;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) go(cur + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+
+    // panah keyboard
+    addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') go(cur + 1);
+      if (e.key === 'ArrowLeft')  go(cur - 1);
+    });
+
+    // buka slide sesuai alamat (#design, #produk)
+    const start = slides.findIndex(s => '#' + s.id === location.hash);
+    go(start < 0 ? 0 : start, false);
+  </script>
+</body>
+</html>
